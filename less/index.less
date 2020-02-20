@@ -23,7 +23,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	//border:1px solid gray;
+	border:1px solid gray;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -63,6 +63,11 @@ table {
     align-items: center;
 }
 
+.space-evenly(){
+	display:flex;
+	justify-content: space-evenly;
+}
+
 html, body {
 
 	font-family: @font-body;
@@ -93,8 +98,7 @@ header{
 	nav{
 		width: 60%;
     	height: 5vh;
-    	display: flex;
-    	justify-content: space-evenly;
+    	.space-evenly();
 		a{
 			text-decoration:none;
 			color: @font-color;
@@ -140,8 +144,11 @@ header{
 		nav{
 			width: 40%;
 			height: 5vh;
-			display: flex;
-			justify-content: space-evenly;
+			.space-evenly();
+
+			@media(max-width:630px){
+				width:100% ;
+			}
 
 			a{
 				text-decoration:none;
@@ -151,7 +158,7 @@ header{
 				width: 27%;
 
 				@media(max-width:630px){
-					width:35% ;
+					width:30% ;
 				}
 
 				&:hover{
@@ -179,16 +186,23 @@ footer{
 /*middle about section*/
 .about{
 	font-size: 1.5rem;
-	display:flex;
-	justify-content:center;
+	.center();
+
+	@media(max-width:500px){
+		height: 120vh;
+	}
 
 	section{
 		width:90%;
 		height: 80vh;
-		display:flex;
+		.space-evenly();
 		flex-direction:column;
 		align-items: center;
-		justify-content:space-evenly;
+		
+
+		@media(max-width:500px){
+			height: 120vh;
+		}
 
 		div{
 			.center();
@@ -196,8 +210,13 @@ footer{
 			p{
 				padding-left: 3%;
 			}
+
+			@media(max-width:500px){
+				flex-direction: column;
+			}
 			
 		}
+
 
 		.skills{
 			width: 100%;
@@ -215,8 +234,15 @@ footer{
 address{
 	font-size: 5rem;
 	height: 60vh;
-	display: flex;
+	.space-evenly();
 	flex-direction: column;
-	justify-content: space-evenly;
 	align-items: center;
+
+	@media(max-width:800px){
+		font-size: 4rem;
+	}
+
+	@media(max-width:500px){
+		font-size: 2rem;
+	}
 }

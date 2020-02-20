@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  border: 1px solid gray;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -214,6 +215,11 @@ header h1 {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 630px) {
+  .intro div nav {
+    width: 100% ;
+  }
+}
 .intro div nav a {
   text-decoration: none;
   border: 1px solid black;
@@ -225,7 +231,7 @@ header h1 {
 }
 @media (max-width: 630px) {
   .intro div nav a {
-    width: 35% ;
+    width: 30% ;
   }
 }
 .intro div nav a:hover {
@@ -249,14 +255,25 @@ footer {
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .about {
+    height: 120vh;
+  }
 }
 .about section {
   width: 90%;
   height: 80vh;
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .about section {
+    height: 120vh;
+  }
 }
 .about section div {
   display: flex;
@@ -265,6 +282,11 @@ footer {
 }
 .about section div p {
   padding-left: 3%;
+}
+@media (max-width: 500px) {
+  .about section div {
+    flex-direction: column;
+  }
 }
 .about section .skills {
   width: 100%;
@@ -279,7 +301,17 @@ address {
   font-size: 5rem;
   height: 60vh;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
+}
+@media (max-width: 800px) {
+  address {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  address {
+    font-size: 2rem;
+  }
 }
