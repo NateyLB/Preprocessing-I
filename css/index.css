@@ -283,6 +283,11 @@ footer {
   padding-left: 3%;
 }
 @media (max-width: 500px) {
+  .about section div p {
+    padding: 3%;
+  }
+}
+@media (max-width: 500px) {
   .about section div {
     flex-direction: column;
   }
