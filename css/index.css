@@ -89,7 +89,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  border: 1px solid gray;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -189,14 +188,15 @@ header h1 {
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
-  height: 60vh;
   align-items: center;
+  height: 60vh;
 }
 .intro div {
   width: 80%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .intro div h2 {
   font-size: 3rem;
@@ -222,6 +222,11 @@ header h1 {
   justify-content: center;
   align-items: center;
   width: 27%;
+}
+@media (max-width: 630px) {
+  .intro div nav a {
+    width: 35% ;
+  }
 }
 .intro div nav a:hover {
   background-color: #00b7ff;
@@ -258,6 +263,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.about section div p {
+  padding-left: 3%;
+}
 .about section .skills {
   width: 100%;
   display: flex;
@@ -265,4 +273,13 @@ footer {
 }
 .about section .skills li {
   padding-left: 20%;
+}
+/*contact page*/
+address {
+  font-size: 5rem;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
