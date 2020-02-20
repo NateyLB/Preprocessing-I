@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	border:1px solid gray;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -51,23 +52,158 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	border:1px solid gray;
 }
+@font-color: #00b7ff;
+@font-header:'Libre Baskerville', serif;
+@font-body:'Barlow', sans-serif;
 
 html, body {
-	height: 100%;
+
+	font-family: @font-body;
+	font-size: 62.5%;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: fit-content;
 }
 
+h1, h2, h3, h4, h5, h6{
+	font-family: @font-header;
+}
+/*header with nav bar*/
 header{
 	display: flex;
+    flex-direction: column;
+	align-items: flex-end;
+	flex-wrap: wrap;
     width: 100%;
     height: 20vh;
     background-image: url(../images/ggb.jpg);
-    background-size: 100% 100%;
-}
+	background-size: contain;
+	font-size:2rem;
+	
+	nav{
+		width: 60%;
+    	height: 5vh;
+    	display: flex;
+    	justify-content: space-evenly;
+		a{
+			text-decoration:none;
+			color: @font-color;
+			
 
-foooter{
+			&:hover{
+				color:white;
+				text-transform:uppercase;
+			}
+		}
+	}
+
+	h1{
+		width:100%;
+		height:10vh;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		color:@font-color;
+		font-size:4rem;
+	}
+}
+/*at a glance section*/
+.intro{
+	font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+	
+	div{
+		width:80%;
+		display:flex;
+		flex-direction:column;
+		align-items: center;
+
+		h2{
+			font-size:3rem;
+		}
+
+		p{
+			width: 100%;
+			height: 30vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		nav{
+			width: 40%;
+			height: 5vh;
+			display: flex;
+			justify-content: space-evenly;
+
+			a{
+				text-decoration:none;
+				border: 1px solid black;
+				border-radius: 5px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 27%;
+
+				&:hover{
+					background-color:@font-color;
+					color:white;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+/*footer*/
+footer{
 	display:flex;
 	justify-content: center;
+	align-items: flex-end;
 	background-image: url('../images/bb.jpg');
+	height: 20vh;
+	background-size: contain;
+	color:white;
 }
+
+/*start or about page*/
+
+/*middle about section*/
+.about{
+	font-size: 1.5rem;
+	display:flex;
+	justify-content:center;
+
+	section{
+		width:90%;
+		height: 80vh;
+		display:flex;
+		flex-direction:column;
+		align-items: center;
+		justify-content:space-evenly;
+
+		div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+		}
+
+		.skills{
+			width: 100%;
+    	display: flex;
+    	justify-content: flex-start;
+
+			li{
+				padding-left: 20%;
+			}
+		}
+	}
+}
+
+

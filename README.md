@@ -31,8 +31,8 @@ Follow these steps for completing your project.
 * [ x] The resume content will be provided by you. The content can be about you or a fictional character.  
 * [x ] Content: Navigation - Build a simple navigation with 4 items of your choosing
 * [ x] Content: Intro - Have a short introduction as to why you would be a good hire
-* [ ] Content: Skills - Showcase a list of skills you have somewhere on your resume
-* [ ] Content: Work History - Showcase your work history somewhere on your resume
+* [ x] Content: Skills - Showcase a list of skills you have somewhere on your resume
+* [ x] Content: Work History - Showcase your work history somewhere on your resume
 * [ ] Content: Contact - Provide some way a potential employer could contact you.  Phone number, email, or a full on contact form (doesn't have to work)
 * [ ] Variables: Incorporate variables in your project for color and font stacks.  
 * [ ] Nesting: Every selector should be nested inside the main container.  Avoid having global styles unless they are element level.
@@ -42,7 +42,7 @@ Follow these steps for completing your project.
 ## Stretch Goals: 
 * [ ] Incorporate a google font of your choosing
 * [ ] Convert the great idea CSS into LESS.  Introduce variables, mixins, nesting, etc. 
-* [ ] Create a link to the portfolio page and create a layout that would allow users to see your work.  A good idea is to link projects back to their github repos so employers can see your code.
+* [ x] Create a link to the portfolio page and create a layout that would allow users to see your work.  A good idea is to link projects back to their github repos so employers can see your code.
 
 
 
